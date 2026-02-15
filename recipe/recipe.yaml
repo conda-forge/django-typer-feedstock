@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: django-typer
-  version: "3.5.1"
+  version: "3.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_typer-${{ version }}.tar.gz
-  sha256: 9e9a6e9093b97fcb61c003a192f4398249830346c64f60276485f4c8b1e331f8
+  sha256: 9bcb7b8c7840373fb1a3c54c27d75081b4398c9353db33432351f2d333d3df62
 
 build:
   number: 0
@@ -26,8 +26,7 @@ requirements:
     - python >=${{ python_min }}
     - django >=4.2,<6.1
     - click >=8.1.8,<8.4
-    - typer-slim >=0.20.1,<0.22.0
-    - shellingham >=1.5.4,<2.0
+    - typer >=0.22.0,<0.23.1
     - typing_extensions >=3.7.4.3
 
 tests:
