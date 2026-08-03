@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: django-typer
-  version: "3.7.2"
+  version: "3.7.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_typer-${{ version }}.tar.gz
-  sha256: 93b404784ef3b4e413086afb6a8c5a4c0f7ba0e22968e7d2dd33326f0254774d
+  sha256: 833059b0bddd5a0c68945c4963064ebb0662b54eec803f86b43904ba6038b777
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - django >=4.2,<6.1
-    - click >=8.1.8,<8.4
+    - click >=8.1.8,<8.5
     - typer >=0.23.1,<0.26.0
 
 tests:
