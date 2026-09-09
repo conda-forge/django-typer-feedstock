@@ -25,8 +25,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - django >=5.2,<6.2
-    - click >=8.1.8,<8.6
-    - typer >=0.23.1,<0.26.0
+    - typer >=0.27.0,<0.28.0
 
 tests:
   - python:
