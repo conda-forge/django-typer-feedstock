@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: django-typer
-  version: "4.1.1"
+  version: "4.2.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_typer-${{ version }}.tar.gz
-  sha256: dbf9dab8a8a49eff1b184430595b74d6215449cfd637d1946641ebcb6c64ed94
+  sha256: 0f49eefe05cb57f9ff84c8fcb8331151dedd97f72a3721946c0c36e787c9797d
 
 build:
   number: 0
